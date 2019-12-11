@@ -4,8 +4,9 @@ class Airport {
     }
     land(plane) {
         this.landing_strip.push(plane);
-        return `${plane.airline}'s ${plane.name} has just landed.`
+        return `${plane.airline}'s Plane ${plane.name} has just landed.`
     }
+    
 }
 
 

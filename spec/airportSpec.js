@@ -9,7 +9,11 @@ describe("Airport", function () {
         expect(airport).toBeInstanceOf(Object);
     });
 
-
+    it("Airport lands plane", function() {
+        plane = new Plane("BA", "One");
+        airport.land(plane);
+        expect(airport.landing_strip).toContain(plane);
+    });
 });
 
 
